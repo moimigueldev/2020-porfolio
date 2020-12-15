@@ -9,6 +9,9 @@ declare var VANTA;
 export class AppComponent implements OnInit, AfterViewInit {
   title = 'portfolio';
   showAvatar = false;
+  showSkills1 = false;
+  showSkills2 = false;
+  showSkills3 = false;
 
   @ViewChild('scrollDownArrow') scrollDownArrow: ElementRef;
 
@@ -34,21 +37,6 @@ export class AppComponent implements OnInit, AfterViewInit {
       minWidth: 200.00,
       scale: 1.00,
       scaleMobile: 1.00
-    })
-
-    VANTA.CLOUDS({
-      el: "#skills",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      skyColor: 0x23153c,
-      cloudColor: 0x23153c,
-      cloudShadowColor: 0x23153c,
-      sunColor: 0x23153c,
-      sunGlareColor: 0x23153c,
-      sunlightColor: 0x23153c
     })
   }
 

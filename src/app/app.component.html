@@ -29,41 +29,80 @@
     </div>
     <div class="container p-5">
         <div class="row">
-            <div class="col-md-12 section">
-                <img src="https://andrewborstein.com/assets/img/bootstrap.png" alt="">
-                <img src="https://andrewborstein.com/assets/img/angular.png" alt="">
-                <img src="https://andrewborstein.com/assets/img/css3.png" alt="">
-                <img src="https://andrewborstein.com/assets/img/html5.png" alt="">
-                <!-- <img src="https://andrewborstein.com/assets/img/nodejs.png" alt=""> -->
+            <div class="col-md-12 section mb-5">
+                <h1>FRONT END</h1>
+
+                <div class="skills">
+                    <div class="show-more" (click)="showSkills1 = !showSkills1">
+                        <i class="fas fa-info"></i>
+                    </div>
+                    <img src="https://andrewborstein.com/assets/img/bootstrap.png" alt="">
+                    <img src="https://andrewborstein.com/assets/img/angular.png" alt="">
+                    <img src="https://andrewborstein.com/assets/img/css3.png" alt="">
+                    <!-- <img src="https://andrewborstein.com/assets/img/html5.png" alt="">
+                    <img src="https://andrewborstein.com/assets/img/nodejs.png" alt=""> -->
+                </div>
+                <div class="more-info" [ngClass]="{'show-skills': showSkills1 }">
+                    <div class="tags px-5 ">
+                        <p>AngularJS</p>
+                        <p>Angular2+</p>
+                        <p>JQuery</p>
+                        <p>Bootstrap</p>
+                        <p>Foundation (Zurb)</p>
+                        <p>Gulp</p>
+                        <p>Webpack</p>
+                        <p>HTML5/CSS3</p>
+                        <p>SCSS/SASS</p>
+                        <p>TailwindCSS</p>
+                        <p>HTML5/CSS3</p>
+                        <p>SCSS/SASS</p>
+                        <p>TailwindCSS</p>
+                        <p>HTML5/CSS3</p>
+                        <p>SCSS/SASS</p>
+                        <p>TailwindCSS</p>
+                    </div>
+
+
+                    <i class="fas fa-grip-lines" (click)="showSkills1 = !showSkills1"></i>
+                </div>
             </div>
-            <div class="col-md-12 section">
-                <h1></h1>
+            <div class="col-md-12 section mb-5">
+                <h1>BACK END</h1>
+
+                <div class="skills">
+                    <div class="show-more" (click)="showSkills2 = !showSkills2">
+                        <i class="fas fa-info"></i>
+                    </div>
+                    <img src="https://andrewborstein.com/assets/img/bootstrap.png" alt="">
+                    <img src="https://andrewborstein.com/assets/img/angular.png" alt="">
+                    <img src="https://andrewborstein.com/assets/img/css3.png" alt="">
+                    <!-- <img src="https://andrewborstein.com/assets/img/html5.png" alt="">
+                    <img src="https://andrewborstein.com/assets/img/nodejs.png" alt=""> -->
+                </div>
+                <div class="more-info" [ngClass]="{'show-skills': showSkills2 }">
+
+                </div>
             </div>
-            <div class="col-md-12 section">
-                <h1></h1>
+            <div class="col-md-12 section mb-5">
+                <h1>More</h1>
+
+                <div class="skills">
+                    <div class="show-more" (click)="showSkills3 = !showSkills3">
+                        <i class="fas fa-info"></i>
+                    </div>
+                    <img src="https://andrewborstein.com/assets/img/bootstrap.png" alt="">
+                    <img src="https://andrewborstein.com/assets/img/angular.png" alt="">
+                    <img src="https://andrewborstein.com/assets/img/css3.png" alt="">
+                    <!-- <img src="https://andrewborstein.com/assets/img/html5.png" alt="">
+                    <img src="https://andrewborstein.com/assets/img/nodejs.png" alt=""> -->
+                </div>
+                <div class="more-info" [ngClass]="{'show-skills': showSkills3 }">
+
+                </div>
             </div>
-        </div>
-    </div>
-</section>
-<section id="skills" class="skills">
-    <div class="header ">
-        <h1><i class="fas fa-tools mr-3"></i>Skills</h1>
-    </div>
-    <div class="container p-5">
-        <div class="row">
-            <div class="col-md-12 section">
-                <img src="https://andrewborstein.com/assets/img/bootstrap.png" alt="">
-                <img src="https://andrewborstein.com/assets/img/angular.png" alt="">
-                <img src="https://andrewborstein.com/assets/img/css3.png" alt="">
-                <img src="https://andrewborstein.com/assets/img/html5.png" alt="">
-                <!-- <img src="https://andrewborstein.com/assets/img/nodejs.png" alt=""> -->
-            </div>
-            <div class="col-md-12 section">
-                <h1></h1>
-            </div>
-            <div class="col-md-12 section">
-                <h1></h1>
-            </div>
+
+
+
         </div>
     </div>
 </section>
