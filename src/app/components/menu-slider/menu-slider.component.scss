@@ -43,6 +43,7 @@
   justify-content: center;
   height: 100%;
   overflow: hidden;
+  transform: translateY(-100px);
   .nav-item {
     margin: 0;
     min-width: 100%;
@@ -90,6 +91,6 @@
     transform: scale(1.05);
     font-weight: 700;
     border-radius: 8px;
-    box-shadow: 0 3px 0 rgba(0, 10, 0, 0.3);
+    box-shadow: 0 8px 0 0px rgba(0, 10, 0, 0.3);
   }
 }

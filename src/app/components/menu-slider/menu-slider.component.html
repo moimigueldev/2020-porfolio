@@ -1,27 +1,29 @@
-<div class="menu-slider" [ngClass]="{'show': show}" #menu>
+<div class="menu-slider" [ngClass]="{'show': show}">
     <div class="menu-icon">
         <i class="fas fa-arrow-circle-right" #rightArrow (click)="showMenu()" *ngIf="showRightArrow"></i>
         <i class="fas fa-arrow-circle-left" #leftArrow (click)="hideMenu()" *ngIf="showLeftArrow"></i>
     </div>
-    <div class="menu-content ">
 
-        <div class="nav-item active">
-            <p><i class="fas fa-user-tie"></i> Introduction</p>
+    <div class="menu-content " #menu>
+
+
+        <div class="nav-item active" (click)="selectTab(0)">
+            <p><i class="fas fa-user-tie"></i> Intro</p>
         </div>
-        <div class="nav-item">
-            <p><i class="fas fa-user-tie"></i> Education</p>
+        <div class="nav-item" (click)="selectTab(1)">
+            <p><i class="fas fa-tools" href="#skills"></i> Skills</p>
         </div>
-        <div class="nav-item">
-            <p><i class="fas fa-user-tie"></i> Experiance</p>
+        <div class="nav-item" (click)="selectTab(2)">
+            <p><i class="fas fa-laptop-code"></i> Experiance</p>
         </div>
-        <div class="nav-item">
-            <p><i class="fas fa-user-tie"></i> Projects</p>
+        <div class="nav-item" (click)="selectTab(3)">
+            <p><i class="fas fa-tasks"></i> Projects</p>
         </div>
-        <div class="nav-item">
-            <p><i class="fas fa-user-tie"></i> Skills</p>
+        <div class="nav-item" (click)="selectTab(4)">
+            <p><i class="fas fa-sticky-note"></i> Static Templates</p>
         </div>
-        <div class="nav-item">
-            <p><i class="fas fa-user-tie"></i> Games</p>
+        <div class="nav-item" (click)="selectTab(5)">
+            <p><i class="fas fa-dice"></i> Games</p>
         </div>
 
 

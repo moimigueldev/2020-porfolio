@@ -7,6 +7,8 @@ body {
   font-family: "Lato", sans-serif;
   transition: padding-left 0.3s ease-in-out;
   background-color: #23153c;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body.activeMenu {

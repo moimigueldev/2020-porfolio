@@ -16,6 +16,7 @@ export class MenuSliderComponent implements OnInit {
   show = true;
   showLeftArrow = false;
   showRightArrow = true;
+  prevTabSelected = 0;
 
   constructor() { }
 
@@ -41,6 +42,12 @@ export class MenuSliderComponent implements OnInit {
     this.showLeftArrow = true;
     this.show = false;
     document.body.style.paddingLeft = '0px'
+  }
+
+  selectTab(index: number) {
+    this.menu.nativeElement.children[index].classList.add('active')
+    this.menu.nativeElement.children[this.prevTabSelected].classList.remove('active')
+    this.prevTabSelected = index
   }
 
 }
