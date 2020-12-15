@@ -1,0 +1,30 @@
+<div class="menu-slider" [ngClass]="{'show': show}" #menu>
+    <div class="menu-icon">
+        <i class="fas fa-arrow-circle-right" #rightArrow (click)="showMenu()" *ngIf="showRightArrow"></i>
+        <i class="fas fa-arrow-circle-left" #leftArrow (click)="hideMenu()" *ngIf="showLeftArrow"></i>
+    </div>
+    <div class="menu-content ">
+
+        <div class="nav-item active">
+            <p><i class="fas fa-user-tie"></i> Introduction</p>
+        </div>
+        <div class="nav-item">
+            <p><i class="fas fa-user-tie"></i> Education</p>
+        </div>
+        <div class="nav-item">
+            <p><i class="fas fa-user-tie"></i> Experiance</p>
+        </div>
+        <div class="nav-item">
+            <p><i class="fas fa-user-tie"></i> Projects</p>
+        </div>
+        <div class="nav-item">
+            <p><i class="fas fa-user-tie"></i> Skills</p>
+        </div>
+        <div class="nav-item">
+            <p><i class="fas fa-user-tie"></i> Games</p>
+        </div>
+
+
+    </div>
+
+</div>
