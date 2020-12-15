@@ -1,5 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
+
 @Component({
   selector: 'app-menu-slider',
   templateUrl: './menu-slider.component.html',
@@ -19,22 +20,19 @@ export class MenuSliderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    // setTimeout(() => {
-    //   console.log('showing');
-    //   this.show = true
-    // }, 1000);
-    // setTimeout(() => {
-    //   console.log('showing');
-    //   this.show = false
-    // }, 2000);
+    document.body.style.paddingLeft = '200px'
+
   }
 
 
   hideMenu(): void {
     console.log('show')
+
     this.showRightArrow = !false;
     this.showLeftArrow = !true;
     this.show = !false;
+    document.body.style.paddingLeft = '200px'
+
   }
 
   showMenu(): void {
@@ -42,6 +40,7 @@ export class MenuSliderComponent implements OnInit {
     this.showRightArrow = false;
     this.showLeftArrow = true;
     this.show = false;
+    document.body.style.paddingLeft = '0px'
   }
 
 }
