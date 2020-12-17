@@ -13,7 +13,7 @@ export class MenuSliderComponent implements OnInit {
   @ViewChild('rightArrow') rightArrow: ElementRef;
   @ViewChild('menu') menu: ElementRef;
 
-  show = true;
+  show = false;
   showLeftArrow = false;
   showRightArrow = true;
   prevTabSelected = 0;
